@@ -1,0 +1,1 @@
+let i=0;const code=[38,38,40,40,37,39,37,39,66,65];document.onkeydown=function(e){if(code[i]===e.keyCode){i++;if(i===code.length){const sub=document.getElementById("home-subtitle");sub.innerHTML="\u03BB"+sub.innerText.substr(1);i=0;}}else{i=0;}}
